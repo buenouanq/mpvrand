@@ -11,7 +11,7 @@ else
 	rows=$2
 fi
 
-mpvr='mpv '$1' --lua=~/.config/mpv/mpvrand.lua --no-config  --shuffle --loop=inf --no-border --no-osc --no-audio --no-sub --screen=1 --panscan=1' #--no-terminal
+mpvr="mpv $1 --lua=~/.config/mpv/mpvrand.lua --no-config  --shuffle --loop=inf --no-border --no-audio --no-sub --screen=1 --panscan=1 --no-osc --speed=$3" #--no-terminal
 
 z=$[ $rows**2 ] #how many instances of mpv you'll end up with
 
